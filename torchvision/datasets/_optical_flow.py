@@ -70,7 +70,7 @@ class FlowDataset(ABC, VisionDataset):
         else:
             return img1, img2, flow
 
-    def __len__(self):
+    def __len__(self) -> int:
         return len(self._image_list)
 
     def __rmul__(self, v):
