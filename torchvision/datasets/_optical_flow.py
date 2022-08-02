@@ -28,7 +28,7 @@ class FlowDataset(ABC, VisionDataset):
     # and it's up to whatever consumes the dataset to decide what valid_flow_mask should be.
     _has_builtin_flow_mask = False
 
-    def __init__(self, root, transforms=None) -> None:
+    def __init__(self, root, transforms=None):
 
         super().__init__(root=root)
         self.transforms = transforms
